@@ -1,0 +1,93 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+body {
+  color: #777777;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  line-height: 1.2em !important;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  line-height: 1.2em !important;
+  font-weight: 600;
+  font-size: 4em !important;
+}
+
+.upcoming_trek {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.latest_trek {
+  padding: 50px;
+}
+.im {
+  padding: 10px 10px 10px 10px;
+  height: 300px;
+}
+.trek_img {
+  text-align: center;
+}
+.motivatinal {
+  padding: 70px 50px 150px 50px;
+
+  background-color: #8fb9c9;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.motivation_img {
+  height: 400px;
+  filter: brightness(170%);
+  float: left;
+}
+
+.motivationOfTrek {
+  position: absolute;
+  right: 50px;
+  z-index: 0;
+  background-color: #dbdbdb;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.Motivation_lines {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+.motivation_image_block {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  z-index: 1;
+}
+
+/*                            */
