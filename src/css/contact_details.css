@@ -1,8 +1,18 @@
-.contact {
-  padding: 50px;
-}
 #logo,
 #social_sticker,
 #contact_me {
-  padding: 50px;
+  padding-top: 30px;
+}
+.logo,
+.sticker {
+  padding-top: 50px;
+}
+.contact {
+  background-color: black;
+}
+h3.heading {
+  color: white;
+}
+p.para {
+  color: white;
 }

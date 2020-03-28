@@ -1,5 +1,12 @@
 .condition {
   padding: 0px 310px;
+  line-height: 0px;
+}
+.copy {
+  line-height: 0px;
+}
+.copyright {
+  background-color: black;
 }
 
 hr.style13 {

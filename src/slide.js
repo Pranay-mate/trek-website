@@ -1,49 +1,37 @@
-import React, { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-
+import React from "react";
+import {
+  Carousel,
+  onChange,
+  onClickItem,
+  onClickThumb
+} from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import cloud_mountains from "./data/clouds+mountains.jpg";
 import groups from "./data/group.jpg";
 import hills from "./data/hills.jpg";
 
 function Slide() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <div className="slideimg">
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={cloud_mountains}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>NEW EXPERIANCE</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={groups} alt="Second slide" />
-
-          <Carousel.Caption>
-            <h3>NEW TRIP</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={hills} alt="Third slide" />
-
-          <Carousel.Caption>
-            <h3>NEW ADVENTURE</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+      <Carousel
+        showArrows={true}
+        onChange={onChange}
+        onClickItem={onClickItem}
+        onClickThumb={onClickThumb}
+        dynamicHeight={true}
+      >
+        <div>
+          <img src={cloud_mountains} />
+          <p className="legend">Legend 1</p>
+        </div>
+        <div>
+          <img src={groups} />
+          <p className="legend">Legend 2</p>
+        </div>
+        <div>
+          <img src={hills} />
+          <p className="legend">Legend 3</p>
+        </div>
       </Carousel>
     </div>
   );

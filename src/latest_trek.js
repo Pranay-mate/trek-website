@@ -13,32 +13,33 @@ function LatestTrek() {
           <div className="trek_img col-lg-4">
             <img src={hills} className="im col-lg-12" alt="Responsive img" />
             <h3>Name: Visapur</h3>
-            <h3>Height: 1,084 m (3,556 ft)</h3>
-            <h3>Date: 22 feb 2020</h3>
-            <h3>Difficulty: Easy</h3>
-            <button type="button" className="btn btn-primary">
+            <h5>Height: 1,084 m (3,556 ft)</h5>
+            <h5>Date: 22 feb 2020</h5>
+            <h5>Difficulty: Easy</h5>
+
+            <a href="#" class="myButton">
               Details
-            </button>
+            </a>
           </div>
           <div className="trek_img col-lg-4">
             <img src={both} className="im col-lg-12" alt="no added" />
             <h3>Name: Kalsubai</h3>
-            <h3>Height: 1646 m (5400 ft)</h3>
-            <h3>Date: 11 sept 2020</h3>
-            <h3>Difficulty: Easy</h3>
-            <button type="button" className="btn btn-primary">
+            <h5>Height: 1646 m (5400 ft)</h5>
+            <h5>Date: 11 sept 2020</h5>
+            <h5>Difficulty: Easy</h5>
+            <a href="#" class="myButton">
               Details
-            </button>
+            </a>
           </div>
           <div className="trek_img col-lg-4">
             <img src={mobile_hills} className="im col-lg-12" alt="no added" />
             <h3>Name: Kalsubai</h3>
-            <h3>Height: 1646 m (5400 ft)</h3>
-            <h3>Date: 11 sept 2020</h3>
-            <h3>Difficulty: Easy</h3>
-            <button type="button" className="btn btn-primary">
+            <h5>Height: 1646 m (5400 ft)</h5>
+            <h5>Date: 11 sept 2020</h5>
+            <h5>Difficulty: Easy</h5>
+            <a href="#" class="myButton">
               Details
-            </button>
+            </a>
           </div>
         </div>
       </div>
