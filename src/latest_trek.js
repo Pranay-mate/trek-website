@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/latest_trek.css";
 
 import mobile_hills from "./data/mobile+hills.jpg";
 import both from "./data/both.jpg";
@@ -17,9 +18,11 @@ function LatestTrek() {
             <h5>Date: 22 feb 2020</h5>
             <h5>Difficulty: Easy</h5>
 
-            <a href="#" class="myButton">
-              Details
-            </a>
+            <div className="details_button">
+              <a href="#" className="myButton">
+                Details
+              </a>
+            </div>
           </div>
           <div className="trek_img col-lg-4">
             <img src={both} className="im col-lg-12" alt="no added" />
@@ -27,9 +30,11 @@ function LatestTrek() {
             <h5>Height: 1646 m (5400 ft)</h5>
             <h5>Date: 11 sept 2020</h5>
             <h5>Difficulty: Easy</h5>
-            <a href="#" class="myButton">
-              Details
-            </a>
+            <div className="details_button">
+              <a href="#" className="myButton">
+                Details
+              </a>
+            </div>
           </div>
           <div className="trek_img col-lg-4">
             <img src={mobile_hills} className="im col-lg-12" alt="no added" />
@@ -37,9 +42,11 @@ function LatestTrek() {
             <h5>Height: 1646 m (5400 ft)</h5>
             <h5>Date: 11 sept 2020</h5>
             <h5>Difficulty: Easy</h5>
-            <a href="#" class="myButton">
-              Details
-            </a>
+            <div className="details_button">
+              <a href="#" className="myButton">
+                Details
+              </a>
+            </div>
           </div>
         </div>
       </div>

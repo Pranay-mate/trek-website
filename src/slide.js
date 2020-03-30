@@ -1,38 +1,49 @@
 import React from "react";
-import {
-  Carousel,
-  onChange,
-  onClickItem,
-  onClickThumb
-} from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Slider from "infinite-react-carousel";
+
 import cloud_mountains from "./data/clouds+mountains.jpg";
 import groups from "./data/group.jpg";
 import hills from "./data/hills.jpg";
+import "./css/slide.css";
 
 function Slide() {
+  const settings = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    className: "slide_box",
+    dots: true,
+    virtualList: true,
+    duration: 20
+  };
   return (
-    <div className="slideimg">
-      <Carousel
-        showArrows={true}
-        onChange={onChange}
-        onClickItem={onClickItem}
-        onClickThumb={onClickThumb}
-        dynamicHeight={true}
-      >
-        <div>
-          <img src={cloud_mountains} />
-          <p className="legend">Legend 1</p>
+    <div>
+      
+      <Slider {...settings}>
+        <div className="row">
+          <img
+            src={cloud_mountains}
+            className="slide_img col-lg-12"
+            alt="Responsive img"
+          />
+          
         </div>
         <div>
-          <img src={groups} />
-          <p className="legend">Legend 2</p>
+          <img
+            src={groups}
+            className="slide_img col-lg-12"
+            alt="Responsive img"
+          />
+          
         </div>
         <div>
-          <img src={hills} />
-          <p className="legend">Legend 3</p>
+          <img
+            src={hills}
+            className="slide_img col-lg-12"
+            alt="Responsive img"
+          />
+          
         </div>
-      </Carousel>
+      </Slider>
     </div>
   );
 }

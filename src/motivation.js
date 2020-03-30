@@ -1,5 +1,6 @@
 import React from "react";
 import self from "./data/self.jpg";
+import "./css/motivation.css";
 
 function Motivation() {
   return (
@@ -23,7 +24,7 @@ function Motivation() {
         </div>
         <div className="motivationOfTrek col-lg-6 info-right">
           <div className="Motivation_lines">
-            <h1>Explore the Unexplored</h1>
+            <h1><img src="https://img.icons8.com/ios/52/000000/climbing.png"/>Explore the Unexplored</h1>
             <p>
               Don’t you feel your mind screaming out sometimes to give it a
               break? Sometimes, it just gets too overloaded with worries about

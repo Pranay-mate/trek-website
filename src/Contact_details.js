@@ -11,7 +11,8 @@ import {
 import {
   faFacebook,
   faInstagram,
-  faTwitter
+  faTwitter,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 function ContactDetails() {
   return (
@@ -72,7 +73,7 @@ function ContactDetails() {
                 </div>
                 <div className="col-lg-3">
                   <p>
-                    <FontAwesomeIcon icon={faCoffee} color="white" />
+                    <FontAwesomeIcon icon={faLinkedin} color="white" />
                   </p>
                 </div>
               </div>
