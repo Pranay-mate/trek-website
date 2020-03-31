@@ -1,5 +1,6 @@
 .motivatinal {
-  padding: 70px 50px 150px 50px;
+  height: 730px;
+  padding: 50px 50px 150px 50px;
 
   background-color: #8fb9c9;
   background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
@@ -27,6 +28,6 @@
 .motivation_image_block {
   position: relative;
   top: 100px;
-  left: 50px;
+  left: 140px;
   z-index: 1;
 }

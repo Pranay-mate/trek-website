@@ -1,14 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/navbar.css";
 
-function Header() {
+function Navbar() {
   return (
-    <div className="main_banner">
-      <h1>Pranay</h1>
-      <p>motivational line</p>
-
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+    <div className="main_banner sticky-top">
+      <nav className="navbar navbar-expand-lg p-3 navbar-dark transparent-nav nav-js">
+        <a className="navbar-brand" href="#home">
           TREK
         </a>
         <button
@@ -24,17 +22,18 @@ function Header() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-item nav-link active" href="#">
+            <a className="nav-item nav-link active" href="#home">
               Home <span className="sr-only">(current)</span>
             </a>
-            <a className="nav-item nav-link" href="#">
-              home
-            </a>
+
             <a className="nav-item nav-link" href="#">
               total_Treks
             </a>
-            <a className="nav-item nav-link" href="#">
+            <a className="nav-item nav-link" href="upcoming_treks">
               upcoming treks
+            </a>
+            <a className="nav-item nav-link" href="#contact_us">
+              Video
             </a>
             <a className="nav-item nav-link" href="#">
               registration
@@ -45,7 +44,10 @@ function Header() {
             <a className="nav-item nav-link" href="#">
               advice
             </a>
-            <a className="nav-item nav-link" href="#">
+            <a className="nav-item nav-link" href="#reviews">
+              Reviews
+            </a>
+            <a className="nav-item nav-link" href="#contact_us">
               contact-US
             </a>
             <a className="nav-item nav-link" href="#">
@@ -58,4 +60,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

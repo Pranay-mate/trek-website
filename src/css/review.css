@@ -1,0 +1,30 @@
+.carousel-inner {
+  height: 500px;
+  margin: 50px 0px 0px 0px;
+}
+.carousel-indicators {
+  padding-bottom: 50px;
+  background-color: black;
+}
+.review {
+  padding: 0px 205px;
+  margin: 0px;
+}
+.carousel-control-next-icon {
+  background-color: black;
+}
+.carousel-control-prev-icon {
+  background-color: black;
+}
+.rounded-circle {
+  padding: 20px 160px;
+}
+
+.review_heading{
+  background-color: #262626;
+  height:70px;
+  
+}
+.review_heading h1{
+  color:white;
+}
