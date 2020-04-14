@@ -17,14 +17,30 @@
   background-color: black;
 }
 .rounded-circle {
-  padding: 20px 160px;
+  
+  margin: 20px auto ;
+  
+  border: 5px solid#262626;
+  background-color: red;
+  border-radius: 50px;
 }
 
-.review_heading{
+.review_headline {
+  position: absolute;
   background-color: #262626;
-  height:70px;
-  
+  height: 120px;
+  width: 100%;
+z-index: -1;
 }
-.review_heading h1{
-  color:white;
+.review_headline h1 {
+  color: white;
+  font-size: 50px;
+}
+.reviewer_name {
+  margin: 0px;
+}
+.image_box{
+padding-top: 30px;
+ width:150px;
+margin: 0 auto;
 }

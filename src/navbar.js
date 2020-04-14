@@ -1,14 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
+import { render } from "react-dom";
+import Latest from "./latest_trek";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/navbar.css";
+import { Route} from "react-router";
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   return (
     <div className="main_banner sticky-top">
       <nav className="navbar navbar-expand-lg p-3 navbar-dark transparent-nav nav-js">
-        <a className="navbar-brand" href="#home">
+        <Link className="navbar-brand" href="/">
           TREK
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,41 +28,25 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-item nav-link active" href="#home">
+            <Link className="nav-item nav-link active" to="/">
               Home <span className="sr-only">(current)</span>
-            </a>
+            </Link>
 
-            <a className="nav-item nav-link" href="#">
-              total_Treks
-            </a>
-            <a className="nav-item nav-link" href="upcoming_treks">
-              upcoming treks
-            </a>
-            <a className="nav-item nav-link" href="#contact_us">
-              Video
-            </a>
-            <a className="nav-item nav-link" href="#">
-              registration
-            </a>
-            <a className="nav-item nav-link" href="#">
-              login
-            </a>
-            <a className="nav-item nav-link" href="#">
-              advice
-            </a>
-            <a className="nav-item nav-link" href="#reviews">
-              Reviews
-            </a>
-            <a className="nav-item nav-link" href="#contact_us">
-              contact-US
-            </a>
-            <a className="nav-item nav-link" href="#">
-              about_us
-            </a>
+            <Link to="/me" className="nav-item nav-link">Home</Link>
+        
+            
+            <Link to="/home" className="nav-item nav-link">Home</Link>
+            <Link to="/home" className="nav-item nav-link">Home</Link>  
+            <Link to="/home" className="nav-item nav-link">Home</Link>
+            <Link to="/home" className="nav-item nav-link">Home</Link>
           </div>
         </div>
       </nav>
+      
+      <Route path="/me" exact render={() => <h1>hello</h1> } />
+      <Route path="/home" exact component={Latest} />
     </div>
+    
   );
 }
 

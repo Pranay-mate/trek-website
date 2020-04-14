@@ -13,7 +13,9 @@ function Slide() {
     className: "slide_box",
     dots: true,
     virtualList: true,
-    duration: 20
+    duration: 20,
+    arrows:true,
+    
   };
   return (
     <div>

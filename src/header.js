@@ -4,10 +4,10 @@ import "./css/header.css";
 
 function Header() {
   return (
-    <section className="header">
+    <section id="home" className="header">
      <div>
-        <h1>India’s Safest Trekking Organisation</h1>
-        <p>motivational line</p>
+        <h1><img src="https://img.icons8.com/ios-filled/50/000000/india-map.png"/>India’s <span className="safe">Safest</span> Trekking Organisation</h1>
+        
       </div>
     </section>
   );

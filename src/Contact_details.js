@@ -16,7 +16,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 function ContactDetails() {
   return (
-    <section className="contact">
+    <section id="contact_us" className="contact">
       <div className="container footer-inner">
         <div className="row">
           <div className="col-lg-4 footer-widget" role="complementary">
